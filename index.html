@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Bingo da Beleza</title>
+  <title>Bingo do LEVI</title>
   <style>
     body {
       font-family: 'Georgia', serif;
@@ -90,19 +90,17 @@
 <body>
   <button class="reiniciar" onclick="reiniciarSorteio()">Reiniciar Sorteio</button>
   <button class="toggle-contagem" onclick="alternarContagem()" id="botaoContagem">Habilitar Contagem</button>
-  <h1>✨ Bingo da Beleza ✨</h1>
+  <h1>👶 Bingo do Levi 👶</h1>
   <button onclick="acionarSorteio()">Sortear Item</button>
   <div class="item-sorteado" id="itemSorteado">Clique no botão para começar!</div>
   <div class="sorteados" id="sorteados"></div>
 
   <script>
     const itens = [
-      "Água Micelar", "Base Líquida", "Batom Líquido", "Blush", "Cílios Postiços", "Cola de Cílios",
-      "Condicionador", "Corretivo", "Delineador", "Esfoliante Facial", "Esponja para Base", "Finalizador",
-      "Fixador de Maquiagem", "Gloss Labial", "Hidratante Corporal", "Iluminador", "Lápis de Boca",
-      "Lápis de Olho", "Máscara Capilar", "Máscara de Cílios", "Máscara Facial de Argila", "Óleo Capilar",
-      "Óleo de Rosa Mosqueta", "Paleta de Sombras", "Pó Compacto", "Primer Facial", "Protetor Solar Facial",
-      "Sabonete Líquido", "Sérum Facial", "Shampoo", "Sombra Unitária"
+      "Levi", "Trocar Fralda", "Mamãe", "Papai", "Maninha", "Amor", "Família", "Fralda", "Chupeta", "Mamadeira",
+      "Berço", "Carrinho", "Ursinho", "Manta", "Macacão", "Babador", "Naninha", "Soninho", "Banho", "Toalha",
+      "Sapatinho", "Meia", "Enxoval", "Lenço Umedecido", "Pomada", "Mordedor", "Colinho", "Carinho", "Benção",
+      "Alegria", "Cegonha"
     ];
 
     let itensRestantes = JSON.parse(localStorage.getItem('itensRestantes')) || [...itens];
